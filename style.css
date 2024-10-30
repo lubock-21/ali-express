@@ -1,0 +1,469 @@
+*{
+    margin: 0;
+
+}
+.container{
+    overflow: hidden;
+}
+.invisible{
+    width: 100%;
+    height: 10px;
+    position: fixed;
+    top: 0;
+    background-color: white;
+    z-index: 1;
+}
+.navbar{
+    display: flex;
+    width: 94%;
+    height: 80px;
+    margin-left: 4%;
+    margin-top: 10px;
+    border-radius: 8px;
+    background-color: red;
+    color: white;
+    align-items: center;
+    z-index: 1;
+    position: fixed;
+    top: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.navbar h1{
+    margin-left: 15px;
+    font-size: 25px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.catalog{
+    padding: 10px 5px;
+    text-align: center;
+    margin-left: 170px;
+    border-radius: 7px;
+    background-color: rgb(215, 21, 21);
+    transition: 0.5s;
+}
+.catalog:hover{
+    background-color: rgb(167, 8, 8);
+    cursor: pointer;
+}
+.navbar ion-icon{
+    font-size: 20px;
+}
+.navbar p{
+    font-size: 14px;
+}
+.search_div{
+    width: 700px;
+    height: 50px;
+    border-radius: 7px;
+    background-color: white;
+    display: flex;
+    margin-left: 10px;
+    align-items: center;
+}
+.search_div input{
+    border: none;
+    border-top-left-radius: 7px;
+    border-bottom-left-radius: 7px;
+    outline: none;
+    text-indent: 20px;
+    height: 40px;
+    width: 570px;
+    font-weight: 700;
+}
+.search_div button{
+    background-color: rgb(152, 236, 27);
+    border: none;
+    border-radius: 20px;
+    width: 100px;
+    height: 40px;
+    margin-left: 20px;
+    transition: 0.5s;
+}
+.search_div button:hover{
+    background-color: rgb(125, 204, 5);
+}
+.wallet_div{
+    width: 60px;
+    height: 50px;
+    text-align: center;
+    align-items: center;
+    margin-left: 20px;
+    border-radius: 7px;
+    background-color: rgb(215, 21, 21);
+    transition: 0.5s;
+}
+.wallet_div:hover{
+    background-color: rgb(167, 8, 8);
+    cursor: pointer;
+}
+.wallet_div ion-icon{
+    padding-top: 5px;
+}
+
+@media(max-width:1286px){
+    .navbar .search_div{
+        width: 500px;
+    }
+    .navbar{
+        margin-left: 2%;
+        width: 96%;
+    }
+}
+@media(max-width:1232px){
+    .navbar .search_div{
+        width: 400px;
+    }
+    
+}
+@media(max-width:1025px){
+    .navbar p{
+        display: none;
+    }
+    .navbar{
+        height: 50px;
+    }
+    .search_div{
+        height: 40px;
+    }
+    .wallet_div{
+        height: 40px;
+        width: 40px;
+    }
+    .search_div button{
+        height: 35px;
+    }
+}
+@media(max-width:967px){
+    
+    .search_div input{
+        width: 260px;
+    }
+}
+@media(max-width:935px){
+    .catalog{
+        margin-left: 50px;
+    }
+}
+@media(max-width:819px){
+    .navbar h1,
+    .catalog,
+    .wallet_div{
+        display: none;
+    }
+    .navbar{
+        background-color: transparent;
+    }
+    .search_div{
+        border: 5px solid rgba(17, 82, 193, 0.562);
+    }
+    .search_div button{
+        border-radius: 0px;
+        height: 100%;
+        border-top-right-radius: 2px;
+        border-bottom-right-radius: 2px;
+    }
+    .search_div input{
+        width: 80%;
+    }
+}
+
+
+/*  navbar is done but with miskates */
+
+
+.small_navbar{
+    width: 92%;
+    height: 50px;
+    margin-left: 4%;
+    margin-top: 90px;
+    display: flex;
+    align-items: center;
+}
+.small_navbar button{
+    padding: 10px 10px;
+    font-size: 12px;
+    margin: 1px;
+    cursor: pointer;
+    border: none;
+    border-radius: 7px;
+}
+.orange{
+    font-weight: 700;
+    color: white;
+    background-color: orangered;
+}
+#location{
+    margin-left: 65%;
+    border: 1px solid rgba(0, 0, 0, 0.24);
+    transition: 0.5s;
+}
+.flame{
+    color: orangered;
+    font-size: 14px;
+}
+
+#location:hover,
+#en:hover{
+    background-color: rgba(128, 128, 128, 0.332);
+}
+#en{
+    border: 1px solid rgba(0, 0, 0, 0.24);
+    transition: 0.5s;  
+}
+#uzs{
+    background-color: rgba(128, 128, 128, 0.332);  
+}
+
+@media(max-width:1286px){
+    #location{
+        margin-left: 50%;
+    }
+    .small_navbar{
+        margin-left: 20px;
+        width: 96%;
+    }
+}
+@media(max-width:1024px){
+    .small_navbar{
+        margin-top: 60px;
+    }
+    #location{
+        margin-left: 40%;
+    }
+}
+@media(max-width:819px){
+    #location,#en,#uzs{
+        display: none;
+    }
+}
+
+
+/*  small navbar is done */
+
+
+.ad_img{
+    width: 100%;
+    width: 92%;
+    height: auto;
+    margin-left: 4%;
+}
+
+
+/*  ad image is done */
+
+
+
+.type-of-products {
+    list-style: none;
+    display: flex;
+    margin-left: 10px;
+    font-size: 16px;
+    margin-top: 20px;
+}
+.type-of-products li{
+    margin-left: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #444;
+}
+#sale{
+    color: black;
+}
+.hr_one{
+    width: 30px;
+    margin-left: 70px;
+    margin-top: 5px;
+    background-color: black;
+    height: 2px;
+    border: none;
+}
+@media(max-width:1286px){
+    .type-of-products{
+        margin-left: -30px;
+    }
+    .hr_one{
+        margin-left: 30px;
+    }
+}
+
+/*  small stuff is done */
+
+
+.products{
+    width: 96%;
+    margin-left: 50px;
+    height: auto;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.card{
+    width: 230px;
+    height: 400px;
+    background-color: white;
+    margin: 5px;
+    overflow: hidden;
+
+}
+.card img{
+    width: 100%;
+    border-radius: 10px;
+}
+.discount{
+    display: flex;
+}
+.discount del{
+    color: #444;
+    font-size: 14px;
+}
+.discount pre{
+  color: red;  
+}
+.card p{
+    color: red;
+}
+.card h5{
+    margin-top: 30px;
+    font-weight: 500;
+}
+
+@media(max-width:1286px){
+    .products{
+        margin-left: 10px;
+        width: 98%;
+    }
+}
+@media(max-width:506px){
+    .card{
+        width: 47%;
+        height: auto;
+    }
+        
+}
+
+/*  products are done */
+
+
+.more_info{
+    padding: 20px 43%;
+    margin-left: 4%;
+    margin-top: 20px;
+    border: none;
+    border-radius: 25px;
+    font-size: 20px;
+    font-weight: 700;
+    background-color: rgba(128, 128, 128, 0.181);
+    transition: 0.5s;
+}
+.more_info:hover{
+    background-color: rgba(128, 128, 128, 0.363);
+}
+
+@media(max-width:1092px){
+    .more_info{
+        padding: 15px 40%;
+    }
+}
+@media(max-width:690px){
+    .more_info{
+        padding: 10px 30%;
+    }
+}
+
+/*  more info is done */
+
+.main_footer{
+    width: 100%;
+    height: 70%;
+    margin-top: 20px;
+    background-color: rgba(128, 128, 128, 0.363); 
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+.footer{
+    width: 80%;
+    display: flex;
+    justify-content: space-around;  
+    flex-wrap: wrap;
+}
+.footer_one{
+    margin: 20px;
+}
+.footer_one p{
+    margin-top: 70px;
+}
+.footer_one button{
+    margin-top: 10px;
+    border: none;
+    padding: 10px 7px;
+    border-radius: 7px;
+    transition: 0.5s;
+}
+.footer_one button:hover{
+    background-color: white;
+    cursor: pointer;
+}
+@media(max-width:768px){
+    .footer{
+        display: block;
+    }
+    .footer_p_one{
+        padding-top: 50px;
+    }
+    .footer_one p{
+        margin-top: 20px;
+    }
+    .main_footer{
+        height: auto;
+    }
+}
+
+/*  footer is done */
+
+
+.another_footer{
+    width: 90%;
+    display: flex;
+    justify-content: space-around;  
+    flex-wrap: wrap;
+}
+.another_footer span{
+    color: rgb(8, 101, 173);
+}
+.another_footer_p{
+    margin-left: 50px;
+}
+.another_footer ul{
+    margin-right: 140px;
+}
+.another_footer li{
+    list-style: none;
+    color: rgb(8, 101, 173);
+}
+.li_two{
+    margin-top: 20px;
+}
+.another_footer button{
+    padding: 8px 10px;
+    border: 1px solid #444;
+    border-radius: 8px;
+}
+.footer_two{
+    margin: 20px;
+}
+
+@media(max-width:768px){
+    .another_footer{
+        display: block;
+    }
+    .another_footer_p{
+        margin-left: 1px;
+    }
+    .another_footer ul{
+        position: relative;
+        right: 45;
+    }
+    .another_footer button{
+        margin-top: 10px;
+    }
+}
